@@ -14,6 +14,13 @@
 		CDD633152061F8E000DDF231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD633132061F8E000DDF231 /* LaunchScreen.storyboard */; };
 		CDD633182061F8E000DDF231 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD633172061F8E000DDF231 /* main.m */; };
 		CDD633222061F8E000DDF231 /* ZHNStaticTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD633212061F8E000DDF231 /* ZHNStaticTableTests.m */; };
+		CDD6332E2061F90900DDF231 /* UITableView+ZHNStaticTable.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD6332D2061F90900DDF231 /* UITableView+ZHNStaticTable.m */; };
+		CDD633312062068A00DDF231 /* ZHNDelegateContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD633302062068A00DDF231 /* ZHNDelegateContainer.m */; };
+		CDD633342062266F00DDF231 /* ZHNStaticTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD633332062266F00DDF231 /* ZHNStaticTableSection.m */; };
+		CDD633372062267D00DDF231 /* ZHNStaticTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD633362062267D00DDF231 /* ZHNStaticTableRow.m */; };
+		CDD6333A20623B8700DDF231 /* ZHNStaticTableDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD6333920623B8700DDF231 /* ZHNStaticTableDataManager.m */; };
+		CDEC3B662063AD4F00D78CAA /* NormalSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEC3B652063AD4F00D78CAA /* NormalSettingTableViewCell.m */; };
+		CDEC3B692063AE8F00D78CAA /* CenterTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEC3B682063AE8F00D78CAA /* CenterTitleTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,20 @@
 		CDD6331D2061F8E000DDF231 /* ZHNStaticTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHNStaticTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD633212061F8E000DDF231 /* ZHNStaticTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHNStaticTableTests.m; sourceTree = "<group>"; };
 		CDD633232061F8E000DDF231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD6332C2061F90900DDF231 /* UITableView+ZHNStaticTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+ZHNStaticTable.h"; sourceTree = "<group>"; };
+		CDD6332D2061F90900DDF231 /* UITableView+ZHNStaticTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZHNStaticTable.m"; sourceTree = "<group>"; };
+		CDD6332F2062068A00DDF231 /* ZHNDelegateContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHNDelegateContainer.h; sourceTree = "<group>"; };
+		CDD633302062068A00DDF231 /* ZHNDelegateContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHNDelegateContainer.m; sourceTree = "<group>"; };
+		CDD633322062266F00DDF231 /* ZHNStaticTableSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHNStaticTableSection.h; sourceTree = "<group>"; };
+		CDD633332062266F00DDF231 /* ZHNStaticTableSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHNStaticTableSection.m; sourceTree = "<group>"; };
+		CDD633352062267D00DDF231 /* ZHNStaticTableRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHNStaticTableRow.h; sourceTree = "<group>"; };
+		CDD633362062267D00DDF231 /* ZHNStaticTableRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHNStaticTableRow.m; sourceTree = "<group>"; };
+		CDD6333820623B8700DDF231 /* ZHNStaticTableDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHNStaticTableDataManager.h; sourceTree = "<group>"; };
+		CDD6333920623B8700DDF231 /* ZHNStaticTableDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHNStaticTableDataManager.m; sourceTree = "<group>"; };
+		CDEC3B642063AD4F00D78CAA /* NormalSettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalSettingTableViewCell.h; sourceTree = "<group>"; };
+		CDEC3B652063AD4F00D78CAA /* NormalSettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalSettingTableViewCell.m; sourceTree = "<group>"; };
+		CDEC3B672063AE8F00D78CAA /* CenterTitleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenterTitleTableViewCell.h; sourceTree = "<group>"; };
+		CDEC3B682063AE8F00D78CAA /* CenterTitleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterTitleTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +104,13 @@
 			children = (
 				CDD633082061F8E000DDF231 /* AppDelegate.h */,
 				CDD633092061F8E000DDF231 /* AppDelegate.m */,
+				CDEC3B642063AD4F00D78CAA /* NormalSettingTableViewCell.h */,
+				CDEC3B652063AD4F00D78CAA /* NormalSettingTableViewCell.m */,
+				CDEC3B672063AE8F00D78CAA /* CenterTitleTableViewCell.h */,
+				CDEC3B682063AE8F00D78CAA /* CenterTitleTableViewCell.m */,
 				CDD6330B2061F8E000DDF231 /* ViewController.h */,
 				CDD6330C2061F8E000DDF231 /* ViewController.m */,
+				CDD6333B206256D600DDF231 /* ZHNStaticTable */,
 				CDD6330E2061F8E000DDF231 /* Main.storyboard */,
 				CDD633112061F8E000DDF231 /* Assets.xcassets */,
 				CDD633132061F8E000DDF231 /* LaunchScreen.storyboard */,
@@ -101,6 +127,23 @@
 				CDD633232061F8E000DDF231 /* Info.plist */,
 			);
 			path = ZHNStaticTableTests;
+			sourceTree = "<group>";
+		};
+		CDD6333B206256D600DDF231 /* ZHNStaticTable */ = {
+			isa = PBXGroup;
+			children = (
+				CDD6332C2061F90900DDF231 /* UITableView+ZHNStaticTable.h */,
+				CDD6332D2061F90900DDF231 /* UITableView+ZHNStaticTable.m */,
+				CDD6333820623B8700DDF231 /* ZHNStaticTableDataManager.h */,
+				CDD6333920623B8700DDF231 /* ZHNStaticTableDataManager.m */,
+				CDD633322062266F00DDF231 /* ZHNStaticTableSection.h */,
+				CDD633332062266F00DDF231 /* ZHNStaticTableSection.m */,
+				CDD633352062267D00DDF231 /* ZHNStaticTableRow.h */,
+				CDD633362062267D00DDF231 /* ZHNStaticTableRow.m */,
+				CDD6332F2062068A00DDF231 /* ZHNDelegateContainer.h */,
+				CDD633302062068A00DDF231 /* ZHNDelegateContainer.m */,
+			);
+			path = ZHNStaticTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +250,14 @@
 			files = (
 				CDD6330D2061F8E000DDF231 /* ViewController.m in Sources */,
 				CDD633182061F8E000DDF231 /* main.m in Sources */,
+				CDD633312062068A00DDF231 /* ZHNDelegateContainer.m in Sources */,
+				CDD6333A20623B8700DDF231 /* ZHNStaticTableDataManager.m in Sources */,
+				CDEC3B662063AD4F00D78CAA /* NormalSettingTableViewCell.m in Sources */,
 				CDD6330A2061F8E000DDF231 /* AppDelegate.m in Sources */,
+				CDD6332E2061F90900DDF231 /* UITableView+ZHNStaticTable.m in Sources */,
+				CDD633372062267D00DDF231 /* ZHNStaticTableRow.m in Sources */,
+				CDD633342062266F00DDF231 /* ZHNStaticTableSection.m in Sources */,
+				CDEC3B692063AE8F00D78CAA /* CenterTitleTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
