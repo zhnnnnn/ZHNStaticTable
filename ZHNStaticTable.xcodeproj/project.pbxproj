@@ -21,6 +21,7 @@
 		CDD6333A20623B8700DDF231 /* ZHNStaticTableDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD6333920623B8700DDF231 /* ZHNStaticTableDataManager.m */; };
 		CDEC3B662063AD4F00D78CAA /* NormalSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEC3B652063AD4F00D78CAA /* NormalSettingTableViewCell.m */; };
 		CDEC3B692063AE8F00D78CAA /* CenterTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEC3B682063AE8F00D78CAA /* CenterTitleTableViewCell.m */; };
+		CDEC3B9F206A337500D78CAA /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEC3B9E206A337500D78CAA /* HelpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		CDEC3B652063AD4F00D78CAA /* NormalSettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalSettingTableViewCell.m; sourceTree = "<group>"; };
 		CDEC3B672063AE8F00D78CAA /* CenterTitleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenterTitleTableViewCell.h; sourceTree = "<group>"; };
 		CDEC3B682063AE8F00D78CAA /* CenterTitleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterTitleTableViewCell.m; sourceTree = "<group>"; };
+		CDEC3B9D206A337500D78CAA /* HelpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		CDEC3B9E206A337500D78CAA /* HelpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				CDEC3B682063AE8F00D78CAA /* CenterTitleTableViewCell.m */,
 				CDD6330B2061F8E000DDF231 /* ViewController.h */,
 				CDD6330C2061F8E000DDF231 /* ViewController.m */,
+				CDEC3B9D206A337500D78CAA /* HelpViewController.h */,
+				CDEC3B9E206A337500D78CAA /* HelpViewController.m */,
 				CDD6333B206256D600DDF231 /* ZHNStaticTable */,
 				CDD6330E2061F8E000DDF231 /* Main.storyboard */,
 				CDD633112061F8E000DDF231 /* Assets.xcassets */,
@@ -249,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDD6330D2061F8E000DDF231 /* ViewController.m in Sources */,
+				CDEC3B9F206A337500D78CAA /* HelpViewController.m in Sources */,
 				CDD633182061F8E000DDF231 /* main.m in Sources */,
 				CDD633312062068A00DDF231 /* ZHNDelegateContainer.m in Sources */,
 				CDD6333A20623B8700DDF231 /* ZHNStaticTableDataManager.m in Sources */,

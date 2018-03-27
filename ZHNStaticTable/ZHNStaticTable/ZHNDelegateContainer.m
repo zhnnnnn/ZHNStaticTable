@@ -9,18 +9,21 @@
 #import "ZHNDelegateContainer.h"
 
 @interface ZHNDelegateContainer()
-@property (nonatomic,copy) NSArray *delegates;
+@property (nonatomic,copy) NSMutableArray *delegates;
 @end
 
 @implementation ZHNDelegateContainer
 + (instancetype)zhn_containerWithDelegates:(NSArray<id> *)delegates {
     ZHNDelegateContainer *container = [[ZHNDelegateContainer alloc]init];
-    container.delegates = delegates;
+    for (id delegate in delegates) {
+        [container.delegates addObject:[NSValue valueWithNonretainedObject:delegate]];
+    }
     return container;
 }
 
 - (BOOL)respondsToSelector:(SEL)aSelector {
-    for (id delegate in self.delegates) {
+    for (NSValue *value in self.delegates) {
+        id delegate = [value nonretainedObjectValue];
         if ([delegate respondsToSelector:aSelector]) {
             return YES;
         }
@@ -29,7 +32,8 @@
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
-    for (id delegate in self.delegates) {
+    for (NSValue *value in self.delegates) {
+        id delegate = [value nonretainedObjectValue];
         return [delegate methodSignatureForSelector:aSelector];
     }
     return nil;
@@ -37,10 +41,19 @@
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
     SEL selector = [anInvocation selector];
-    for (id delegate in self.delegates) {
+    for (NSValue *value in self.delegates) {
+        id delegate = [value nonretainedObjectValue];
         if ([delegate respondsToSelector:selector]) {
             [anInvocation invokeWithTarget:delegate];
         }
     }
+}
+
+#pragma mark - getters
+- (NSMutableArray *)delegates {
+    if (_delegates == nil) {
+        _delegates = [NSMutableArray array];
+    }
+    return _delegates;
 }
 @end

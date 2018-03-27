@@ -10,6 +10,7 @@
 #import "UITableView+ZHNStaticTable.h"
 #import "NormalSettingTableViewCell.h"
 #import "CenterTitleTableViewCell.h"
+#import "HelpViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView *tableView;
@@ -34,6 +35,7 @@
                                                  OriginalDelegate:self
                                                originalDatasource:self];
     
+    __weak typeof(self) weakSelf = self;
     [self.tableView zhn_addSection:^(ZHNStaticTableSection *section) {
         [section zhn_addRow:^(ZHNStaticTableRow *row) {
             row.displayCellHandle = ^(UITableView *tableView, UITableViewCell *cell, NSIndexPath *indexPath) {
@@ -67,6 +69,9 @@
         [section zhn_addRow:^(ZHNStaticTableRow *row) {
             row.displayCellHandle = ^(UITableView *tableView, UITableViewCell *cell, NSIndexPath *indexPath) {
                 cell.textLabel.text = @"帮助与反馈";
+            };
+            row.selectCellHandle = ^(UITableView *tableView, NSIndexPath *indexPath) {
+                [weakSelf.navigationController pushViewController:[[HelpViewController alloc]init] animated:YES];
             };
         }];
         [section zhn_addRow:^(ZHNStaticTableRow *row) {
